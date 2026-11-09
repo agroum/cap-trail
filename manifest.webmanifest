@@ -1,0 +1,17 @@
+{
+  "name": "Cap Trail 2028",
+  "short_name": "Cap Trail",
+  "description": "Carnet d'entraînement course et salle, avec la séance du jour et le suivi de la douleur.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ECF0ED",
+  "theme_color": "#ECF0ED",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
