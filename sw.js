@@ -1,5 +1,5 @@
 /* Cap Trail : fonctionne hors ligne. Change VERSION à chaque mise à jour de l'appli. */
-const VERSION = 'captrail-v1';
+const VERSION = 'captrail-v2';
 const FONTS = 'captrail-fonts';
 const SHELL = [
   './',
@@ -29,6 +29,7 @@ self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET') return;
   const url = new URL(req.url);
+  if (/\.(png|webmanifest)$/.test(url.pathname)) return; // icônes et manifeste : toujours depuis le réseau
 
   // Pages : réseau d'abord (pour recevoir les mises à jour), sinon la copie gardée hors ligne.
   if (req.mode === 'navigate') {
