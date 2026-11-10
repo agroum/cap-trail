@@ -1,5 +1,5 @@
 /* Cap Trail : fonctionne hors ligne. Change VERSION à chaque mise à jour de l'appli. */
-const VERSION = 'captrail-v2';
+const VERSION = 'captrail-v3';
 const FONTS = 'captrail-fonts';
 const SHELL = [
   './',
